@@ -1,11 +1,15 @@
-#importar  la extencion sqlite3 
 import sqlite3
+
 #crae variables de conexion 
+
 conexion = sqlite3.connect("Base_de_datos.db")#agregar ina base d edatos como existente 
 curso_db = conexion.cursor()#crear n cursos de la base de datos 
 #crar tabla de base de dato si no existe 
+
+
+
 curso_db.execute(
-    """CREATE TABLE IF NOT EXISTS usuario(       
+    """CREATE TABLE IF NOT EXISTS admin(       
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     nombre TEXT NOT NULL,
     edad  INTEGER,
