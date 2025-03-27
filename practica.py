@@ -15,6 +15,7 @@ conn.commit()
 curso.execute("INSERT INTO comentario (tipo_de_comentariO,fecha)VALUES(?,?)",
               ("comentrio","2019,10,29"))
 conn.commit()
+
 curso.execute("SELECT * FROM comentario")
 comentario = curso.fetchall()
 for comentarios in comentario:
